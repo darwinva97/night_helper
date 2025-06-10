@@ -1,0 +1,37 @@
+{
+  "name": "@repo/db",
+  "version": "1.0.0",
+  "types": "./generated/client/index.d.ts",
+  "exports": {
+    ".": "./generated/client/index.js",
+    "./cliente": "./src/index.ts"
+  },
+  "scripts": {
+    "db:migrate:deploy": "prisma migrate deploy",
+    "db:migrate:dev": "prisma migrate dev",
+    "db:push": "prisma db push",
+    "db:seed": "tsx src/seed.ts",
+    "dev": "tsup src/* --watch",
+    "format": "prisma format",
+    "generate": "prisma generate",
+    "lint": "eslint . --max-warnings 0",
+    "prebuild": "npm run generate",
+    "predev": "npm run generate",
+    "studio": "prisma studio"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^6.9.0",
+    "@repo/typescript-config": "workspace:^",
+    "dotenv": "^16.5.0",
+    "prisma": "^6.9.0",
+    "tsup": "^8.5.0",
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.15.3"
+  }
+}

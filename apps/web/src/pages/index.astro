@@ -1,0 +1,8 @@
+---
+import { prisma } from "@repo/db/cliente";
+
+const codes = await prisma.codeChallenge.findMany({});
+---
+
+<h1>Hola!</h1>
+<pre>{JSON.stringify(codes, null, 3)}</pre>
