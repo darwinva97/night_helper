@@ -9,11 +9,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@repo/db": "*",
+    "@repo/db": "workspace:*",
     "astro": "^5.9.2"
   },
   "devDependencies": {
-    "@repo/eslint-config": "*",
-    "@repo/typescript-config": "*"
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*"
   }
 }

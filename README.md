@@ -7,7 +7,7 @@ This Turborepo starter is maintained by the Turborepo core team.
 Run the following command:
 
 ```sh
-npx create-turbo@latest
+pnpm create turbo@latest
 ```
 
 ## What's inside?
@@ -61,7 +61,7 @@ By default, Turborepo will cache locally. To enable Remote Caching you will need
 
 ```
 cd my-turborepo
-npx turbo login
+pnpm turbo login
 ```
 
 This will authenticate the Turborepo CLI with your [Vercel account](https://vercel.com/docs/concepts/personal-accounts/overview).
@@ -69,7 +69,7 @@ This will authenticate the Turborepo CLI with your [Vercel account](https://verc
 Next, you can link your Turborepo to your Remote Cache by running the following command from the root of your Turborepo:
 
 ```
-npx turbo link
+pnpm turbo link
 ```
 
 ## Useful Links

@@ -1,0 +1,5 @@
+# Generated Prisma Client (can cause compatibility issues across machines)
+src/generated/
+# Compiled TypeScript
+src/*.js
+src/*.d.ts 

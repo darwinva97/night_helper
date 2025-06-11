@@ -2,11 +2,13 @@
 // learn more about it in the docs: https://pris.ly/d/prisma-schema
 datasource db {
     provider = "postgresql"
-    url      = env("DATABASE_URL")
+    url      = "postgresql://postgres:postgres@77.37.63.164:5432/sandbox?schema=public"
 }
 
 generator client {
-    provider = "prisma-client-js"
+    provider = "prisma-client"
+    output   = "../src/generated/prisma"
+    moduleFormat = "esm"
 }
 
 enum Difficult {

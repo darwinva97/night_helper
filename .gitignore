@@ -2,6 +2,7 @@
 
 # Dependencies
 node_modules
++pnpm-lock.yaml
 .pnp
 .pnp.js
 
@@ -27,6 +28,8 @@ out/
 build
 dist
 
++# Prisma generated files (can cause compatibility issues across machines)
++/packages/db/generated/
 
 # Debug
 npm-debug.log*
